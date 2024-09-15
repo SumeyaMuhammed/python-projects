@@ -2,6 +2,7 @@ import sys
 import random
 def main():
     number = random.randint(1, 100)
+    print("Between 1 and 100.")
 
     def guess_num(num):
         if num > number + 15:
@@ -11,7 +12,7 @@ def main():
         elif num != number:
             print("You're close.")
         else:
-            print("Congrats your guess is correct! \U0001F44F\U0001F3FB\U0001F44F\U0001F3FB\U0001F44F\U0001F3FB")
+            print("Congrats your guess is correct!\U0001F44F\U0001F3FB\U0001F44F\U0001F3FB\U0001F44F\U0001F3FB")
             sys.exit()
         
     limit = 10
